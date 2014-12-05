@@ -1,0 +1,29 @@
+{
+    "name": "drupalci/results-api",
+    "type": "api",
+    "description": "API for Results site.",
+    "homepage": "https://github.com/nickschuch/drupalci-results-api",
+    "support": {
+        "issues": "https://github.com/nickschuch/drupalci-results-api",
+        "source": "https://github.com/nickschuch/drupalci-results-api"
+    },
+    "keywords": [
+        "drupalci",
+        "results",
+        "api"
+    ],
+    "license": "GPL-2.0+",
+    "require": {
+        "guzzlehttp/guzzle": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.4.*@dev"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-4" : { "DrupalCIResultsApi\\": "src/" }
+    }
+}
