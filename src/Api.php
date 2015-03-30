@@ -69,7 +69,7 @@ class Api {
       'auth' => [$username, $password],
     ]);
 
-    $id = getBuildId($response->getHeader('Location'));
+    $id = $this->getBuildId($response->getHeader('Location'));
     return $id;
   }
 
